@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #2196f3;
+  --background-color: #121212;
+  --card-background: #ffffff;
+  --text-color: #ffffff;
+  --secondary-text: rgba(255, 255, 255, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+body {
+  direction: rtl;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-title {
+  color: var(--text-color);
+  font-size: 24px;
+}
+
+.header-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.header-links a.active {
+  color: var(--primary-color);
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.welcome-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+  color: var(--secondary-text);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--secondary-text);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
